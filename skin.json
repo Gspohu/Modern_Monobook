@@ -1,30 +1,30 @@
 {
-	"name": "Modern_Monobook",
+	"name": "ModernMonobook",
 	"author": [
 		"Gabriel Wicke",
 		"..."
 	],
-	"url": "https://www.mediawiki.org/wiki/Skin:Modern_Monobook",
-	"descriptionmsg": "Modern_Monobook-desc",
-	"namemsg": "skinname-Modern_Monobook",
-	"license-name": "GPL-2.0+",
+	"url": "https://www.mediawiki.org/wiki/Skin:ModernMonobook",
+	"descriptionmsg": "ModernMonobook-desc",
+	"namemsg": "skinname-ModernMonobook",
+	"license-name": "GPL-3.0+",
 	"type": "skin",
 	"requires": {
 		"MediaWiki": ">= 1.25.0"
 	},
 	"ValidSkinNames": {
-		"Modern_Monobook": "Modern_Monobook"
+		"modernmonobook": "ModernMonobook"
 	},
 	"SkinOOUIThemes": {
-		"Modern_Monobook": "Apex"
+		"modernmonobook": "Apex"
 	},
 	"MessagesDirs": {
-		"Modern_Monobook": [
+		"modernmonobook": [
 			"i18n"
 		]
 	},
 	"ResourceModules": {
-		"skins.Modern_Monobook.styles": {
+		"skins.modernmonobook.styles": {
 			"position": "top",
 			"styles": {
 				"main.css": {
@@ -35,16 +35,16 @@
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
-		"remoteSkinPath": "Modern_Monobook"
+		"remoteSkinPath": "ModernMonobook"
 	},
 	"ResourceModuleSkinStyles": {
-		"Modern_Monobook": {
+		"modernmonobook": {
 			"+mediawiki.special.preferences.styles": "skinStyles/mediawiki.special.preferences.styles.less"
 		}
 	},
 	"AutoloadClasses": {
-		"SkinModern_Monobook": "SkinModern_Monobook.php",
-		"Modern_MonobookTemplate": "Modern_MonobookTemplate.php"
+		"SkinModernMonobook": "SkinModernMonobook.php",
+		"ModernMonobookTemplate": "ModernMonobookTemplate.php"
 	},
 	"manifest_version": 1
 }

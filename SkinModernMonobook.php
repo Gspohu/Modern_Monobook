@@ -1,6 +1,6 @@
 <?php
 /**
- * MonoBook nouveau.
+ * Monobook nouveau.
  *
  * Translated from gwicke's previous TAL template version to remove
  * dependency on PHPTAL.
@@ -28,11 +28,11 @@
  * Inherit main code from SkinTemplate, set the CSS and template filter.
  * @ingroup Skins
  */
-class SkinMonoBook extends SkinTemplate {
-	/** Using MonoBook. */
-	public $skinname = 'monobook';
-	public $stylename = 'MonoBook';
-	public $template = 'MonoBookTemplate';
+class SkinModernMonobook extends SkinTemplate {
+	/** Using ModernMonobook. */
+	public $skinname = 'modernmonobook';
+	public $stylename = 'ModernMonobook';
+	public $template = 'ModernMonobookTemplate';
 
 	/**
 	 * @param OutputPage $out
@@ -43,7 +43,7 @@ class SkinMonoBook extends SkinTemplate {
 		$out->addModuleStyles( array(
 			'mediawiki.skinning.interface',
 			'mediawiki.skinning.content.externallinks',
-			'skins.monobook.styles'
+			'skins.modernmonobook.styles'
 		) );
 
 		// TODO: Migrate all of these

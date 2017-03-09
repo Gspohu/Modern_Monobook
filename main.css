@@ -50,7 +50,8 @@ body {
 	font: x-small sans-serif;
 	/* @embed */
 	/*background: #f9f9f9 url(headbg.jpg) 0 0 no-repeat;*/
-	background: url('../images/background/dark.png') center no-repeat;
+	background: url('images/background/dark.png') center no-repeat;
+	background-size: cover;
 	color: black;
 	margin: 0;
 	padding: 0;
