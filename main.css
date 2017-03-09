@@ -9,6 +9,21 @@
 ** All you guys rock :)
 */
 
+/* Font */
+@font-face
+{
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 400;
+src: local('Ubuntu'), url(https://fonts.gstatic.com/s/ubuntu/v9/sDGTilo5QRsfWu6Yc11AXg.woff2) format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+*
+{
+	font-family: 'Ubuntu', Arial, serif;
+}
+
 div#column-content {
 	width: 100%;
 	float: right;
@@ -47,7 +62,7 @@ div#column-one {
 */
 
 body {
-	font: x-small sans-serif;
+	font: 11px sans-serif;
 	/* @embed */
 	/*background: #f9f9f9 url(headbg.jpg) 0 0 no-repeat;*/
 	background: url('images/background/dark.png') center no-repeat;
@@ -496,8 +511,8 @@ li#ca-print {
 }
 
 /* TODO: #t-iscite is only used by the Cite extension, come up with some
- * system which allows extensions to add to this file on the fly
- */
+* system which allows extensions to add to this file on the fly
+*/
 #t-ispermalink, #t-iscite {
 	color: #999;
 }
@@ -548,12 +563,12 @@ div#footer li {
 }
 
 /**
- * This was originally added by Gabriel Wicke in r3681 (committed on 25 May 2004)
- * with the commit message "tweaks to page history".
- * Unlike the other IE/Mac fixes that used to be present here, this seems to get
- * applied on more modern browsers, so let's keep it here until someone has the
- * time to properly test it out.
- */
+* This was originally added by Gabriel Wicke in r3681 (committed on 25 May 2004)
+* with the commit message "tweaks to page history".
+* Unlike the other IE/Mac fixes that used to be present here, this seems to get
+* applied on more modern browsers, so let's keep it here until someone has the
+* time to properly test it out.
+*/
 #pagehistory li.selected {
 	position: relative;
 }
