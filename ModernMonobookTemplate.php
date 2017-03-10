@@ -252,7 +252,7 @@ class ModernMonobookTemplate extends BaseTemplate {
 	function searchBox() {
 		?>
 		<div id="p-search" class="portlet" role="search">
-			<h3><label for="searchInput"><?php $this->msg( 'search' ) ?></label></h3>
+			<!--- <h3><label for="searchInput"><?php /*$this->msg( 'search' )*/ ?></label></h3>-->
 
 			<div id="searchBody" class="pBody">
 				<form action="<?php $this->text( 'wgScript' ) ?>" id="searchform">
@@ -294,7 +294,7 @@ class ModernMonobookTemplate extends BaseTemplate {
 	function cactions() {
 		?>
 		<div id="p-cactions" class="portlet" role="navigation">
-			<h3><?php $this->msg( 'views' ) ?></h3>
+			<!--<h3><?php /*$this->msg( 'views' )*/ ?></h3>-->
 
 			<div class="pBody">
 				<ul><?php
@@ -314,7 +314,7 @@ class ModernMonobookTemplate extends BaseTemplate {
 	function toolbox() {
 		?>
 		<div class="portlet" id="p-tb" role="navigation">
-			<h3><?php $this->msg( 'toolbox' ) ?></h3>
+			<!---<h3><?php /*$this->msg( 'toolbox' )*/ ?></h3>-->
 
 			<div class="pBody">
 				<ul>
@@ -379,7 +379,7 @@ class ModernMonobookTemplate extends BaseTemplate {
 		$msgObj = wfMessage( $bar );
 		?>
 
-		<h3><?php echo htmlspecialchars( $msgObj->exists() ? $msgObj->text() : $bar ); ?></h3>
+		<!--<h3><?php /*echo htmlspecialchars( $msgObj->exists() ? $msgObj->text() : $bar );*/ ?></h3>-->
 		<div class='pBody'>
 			<?php
 			if ( is_array( $cont ) ) {
