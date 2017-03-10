@@ -227,6 +227,11 @@ table.rimage {
 ** Logo properties
 */
 
+.mw-wiki-logo
+{
+	background-size: contain;
+}
+
 #p-logo {
 	top: 0;
 	left: 0;
@@ -245,7 +250,7 @@ table.rimage {
 #p-logo a:hover {
 	display: block;
 	height: 155px;
-	width: 12.2em;
+	width: 12em;
 	background-repeat: no-repeat;
 	background-position: 35% 50% !important;
 	text-decoration: none;
