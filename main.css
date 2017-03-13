@@ -79,7 +79,7 @@ body {
 	/* @embed */
 	background: url('images/background/dark.png') center no-repeat;
 	background-size: cover;
-	color: black;
+	color: rgb(230,230,230);
 	margin: 0;
 	padding: 0;
 	direction: ltr; /* Needed for RTL flipping */
@@ -221,7 +221,7 @@ table.rimage {
 .pBody {
 	font-size: 105%;
 	background-color: rgba(0,0,0,0.4);
-	color: black;
+	color: rgb(230,230,230);
 	border-collapse: collapse;
 	border: 1px solid rgba(255,255,255,0.1);
 	border-radius: 0 3px 3px 0 ;
@@ -386,7 +386,7 @@ input.searchButton:hover
 #p-personal ul {
 	border: none;
 	line-height: 1.4em;
-	color: #2f6fab;
+	color: #114a68;
 	padding: 0;
 	padding-right: 2em;
 	/* Avoid overlap with the logo. */
@@ -400,29 +400,33 @@ input.searchButton:hover
 	cursor: default;
 }
 
-#p-personal li {
+#p-personal li
+{
 	z-index: 0;
 	border: none;
 	padding: 0;
 	display: inline;
-	color: #2f6fab;
+	color: #114a68;
 	margin-left: 1em;
 	line-height: 1.2em;
 	background: none;
 }
 
-#p-personal li a {
+#p-personal li a
+{
 	text-decoration: none;
 	color: #005896;
 	padding-bottom: .2em;
 }
 
-#p-personal li a:hover {
-	background-color: white;
+#p-personal li a:hover
+{
+	background-color: rgba(0,0,0,0.4);
 	text-decoration: none;
 }
 
-#p-personal li.active a:hover {
+#p-personal li.active a:hover
+{
 	background-color: transparent;
 }
 
@@ -446,7 +450,7 @@ li#pt-userpage {
 
 /* "Not logged in" text in gray */
 li#pt-anonuserpage {
-	color: #707070;
+	color: rgb(180,180,180);
 }
 
 #p-personal li.active {
@@ -577,11 +581,8 @@ li#ca-print {
 	text-transform: none;
 }
 
-/* TODO: #t-iscite is only used by the Cite extension, come up with some
-* system which allows extensions to add to this file on the fly
-*/
 #t-ispermalink, #t-iscite {
-	color: #999;
+	color: rgb(180,180,180);
 }
 
 /*
@@ -736,11 +737,6 @@ footer
 	color: rgb(255,255,255);
 }
 
-.pageDate
-{
-	position: absolute;
-}
-
 .info
 {
 	display: flex;
@@ -785,7 +781,7 @@ footer
 	}
 }
 /**/
-div#footer {
+/*div#footer {
 	background-color: white;
 	border-top: 1px solid #fabd23;
 	border-bottom: 1px solid #fabd23;
@@ -805,7 +801,7 @@ div#footer li {
 #f-copyrightico {
 	float: left;
 	height: 1%;
-}
+}*/
 
 #userloginprompt, #languagelinks {
 	font-size: 85%;
@@ -843,7 +839,7 @@ div.patrollink {
 
 .editExternally {
 	border: 1px solid gray;
-	background-color: #ffffff;
+	background-color: rgba(0,0,0,0.4);
 	padding: 3px;
 	margin-top: 0.5em;
 	float: left;
@@ -873,10 +869,10 @@ input#wpDiff {
 
 /* noarticletext */
 div.noarticletext {
-	border: 1px solid #ccc;
-	background: #fff;
+	border: 1px solid rgba(255,255,255,0.15);
+	background: rgba(0,0,0,0.4);
 	padding: .2em 1em;
-	color: #000;
+	color: rgb(230,230,230);
 }
 
 div#searchTargetContainer {
@@ -915,10 +911,10 @@ div#searchTargetHide {
 }
 
 div.multipageimagenavbox {
-	border: solid 1px silver;
+	border: solid 1px rgba(255,255,255,0.15);
 	padding: 4px;
 	margin: 1em;
-	background: #f0f0f0;
+	background: rgba(0,0,0,0.4);
 }
 
 div.multipageimagenavbox div.thumb {
@@ -953,17 +949,17 @@ div.mw-lag-warn-high {
 
 div.mw-lag-warn-normal {
 	border: 1px solid #FFCC66;
-	background-color: #FFFFCC;
+	background-color: rgba(0,0,0,0.4);
 }
 
 div.mw-lag-warn-high {
 	font-weight: bold;
 	border: 2px solid #FF0033;
-	background-color: #FFCCCC;
+	background-color: rgba(0,0,0,0.4);
 }
 
 .MediaTransformError {
-	background-color: #ccc;
+	background-color: rgba(0,0,0,0.4);
 	padding: 0.1em;
 }
 
