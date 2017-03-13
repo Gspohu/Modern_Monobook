@@ -37,10 +37,11 @@ div#column-content {
 	padding: 1em;
 	position: relative;
 	z-index: 2;
-	background: white;
-	color: black;
-	border: 1px solid #aaa;
+	background-color: rgba(0,0,0,0.4);
+	color: rgb(230,230,230);
+	border: 1px solid rgba(255,255,255,0.1);
 	border-right: none;
+	border-radius: 3px;
 	line-height: 1.5em;
 }
 
@@ -465,22 +466,29 @@ li#pt-anonuserpage {
 
 #p-cactions li {
 	display: inline;
-	border: 1px solid #aaa;
+	border-top: 1px solid rgba(255,255,255,0.1);
+	border-left: 1px solid rgba(255,255,255,0.1);
+	border-right: 1px solid rgba(255,255,255,0.1);
 	border-bottom: none;
-	padding: 0 0 1em 0;
+	border-radius: 3px 3px 0 0;
+	padding-bottom: 2px;
+	padding-top: 1px;
 	margin: 0 .3em 0 0;
-	overflow: visible;
-	background: white;
+	height: 10px;
+	overflow: hidden;
+	background: rgba(0,0,0,0.4);
 }
 
 #p-cactions li.selected {
-	border-color: #fabd23;
+	border-top: 1px solid rgba(255,255,255,0.3);
+	border-left: 1px solid rgba(255,255,255,0.3);
+	border-right: 1px solid rgba(255,255,255,0.3);
+	border-bottom: none;
 	font-weight: bold;
 }
 
 #p-cactions li a {
-	background-color: #fbfbfb;
-	color: #002bb8;
+	color: rgb(230,230,230);
 	border: none;
 	padding: 0 .8em .3em;
 	position: relative;
@@ -491,7 +499,6 @@ li#pt-anonuserpage {
 
 #p-cactions li.selected a {
 	z-index: 3;
-	background-color: white;
 }
 
 #p-cactions .new a {
@@ -501,7 +508,6 @@ li#pt-anonuserpage {
 #p-cactions li a:hover {
 	z-index: 3;
 	text-decoration: none;
-	background-color: white;
 }
 
 #p-cactions h3 {
