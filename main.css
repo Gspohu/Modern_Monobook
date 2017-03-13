@@ -39,10 +39,21 @@ div#column-content {
 	z-index: 2;
 	background-color: rgba(0,0,0,0.4);
 	color: rgb(230,230,230);
-	border: 1px solid rgba(255,255,255,0.1);
+	border: 1px solid rgba(255,255,255,0.2);
 	border-right: none;
-	border-radius: 3px;
+	border-radius: 3px 0 0 3px;
 	line-height: 1.5em;
+	z-index: 0;
+}
+
+.mw-body h1,
+.mw-body h2,
+.mw-body h3,
+.mw-body h4,
+.mw-body h5,
+.mw-body h6
+{
+	color: rgb(230,230,230);
 }
 
 div#column-one {
@@ -323,6 +334,7 @@ input.searchButton:hover
 	border: 1px solid rgba(250,250,250,0.1);
 	margin-bottom: 5px;
 	background-color: rgba(200,200,200,0.1);
+	padding-left: 5px;
 }
 
 #p-search .pBody {
@@ -480,11 +492,12 @@ li#pt-anonuserpage {
 }
 
 #p-cactions li.selected {
-	border-top: 1px solid rgba(255,255,255,0.3);
-	border-left: 1px solid rgba(255,255,255,0.3);
-	border-right: 1px solid rgba(255,255,255,0.3);
-	border-bottom: none;
+	border-top: 1px solid rgba(255,255,255,0.2);
+	border-left: 1px solid rgba(255,255,255,0.2);
+	border-right: 1px solid rgba(255,255,255,0.2);
+	border-bottom: 1px solid rgb(49,57,66);
 	font-weight: bold;
+	z-index: 1;
 }
 
 #p-cactions li a {
