@@ -118,7 +118,7 @@ class ModernMonobookTemplate extends BaseTemplate {
 					<h3><?php $this->msg( 'personaltools' ) ?></h3>
 
 					<div class="pBody">
-						<ul<?php $this->html( 'userlangattributes' ) ?>>
+						<ul class="topNav"<?php $this->html( 'userlangattributes' ) ?>>
 						<?php
 
 						$personalTools = $this->getPersonalTools();
@@ -344,12 +344,13 @@ class ModernMonobookTemplate extends BaseTemplate {
 					<!--<h3><?php /*$this->msg( 'views' )*/ ?></h3>-->
 
 					<div class="pBody">
-						<ul><?php
+						<ul>
+						<?php
 						foreach ( $this->data['content_actions'] as $key => $tab ) {
 							echo '
 							' . $this->makeListItem( $key, $tab );
-						} ?>
-
+						}
+						?>
 					</ul>
 					<?php $this->renderAfterPortlet( 'cactions' ); ?>
 				</div>

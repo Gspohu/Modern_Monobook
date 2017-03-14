@@ -33,7 +33,7 @@ div#column-content {
 
 .mw-body
 {
-	margin: 2.8em 0 0 16em;
+	margin: 8em 0 0 16em;
 	padding: 1em;
 	position: relative;
 	z-index: 2;
@@ -78,7 +78,7 @@ body {
 	font: 11px sans-serif;
 	/* @embed */
 	background: url('images/background/dark.png') center no-repeat;
-	background-size: cover;
+	/*background-size: cover;*/
 	color: rgb(230,230,230);
 	margin: 0;
 	padding: 0;
@@ -230,18 +230,30 @@ table.rimage {
 }
 
 /* allows .pBody styles to wrap around content added via BaseTemplateAfterPortlet hook */
-.pBody:after {
+.pBody:after
+{
 	content: '';
 	clear: both;
 	display: block;
 }
 
-.portlet ul {
+.topNav
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	height: 75px;
+}
+
+.portlet ul
+{
 	line-height: 1.5em;
 	font-size: 95%;
 }
 
-.portlet li {
+.portlet li
+{
 	padding: 0;
 	margin: 0;
 }
@@ -342,7 +354,8 @@ input.searchButton:hover
 	text-align: center;
 }
 
-#p-search #searchform div div {
+#p-search #searchform div div
+{
 	margin-top: .4em;
 	font-size: 95%;
 }
@@ -350,14 +363,16 @@ input.searchButton:hover
 /*
 ** the personal toolbar
 */
-#p-personal {
+#p-personal
+{
 	position: absolute;
 	left: 0;
 	top: 0;
 	z-index: 3;
 }
 
-#p-personal {
+#p-personal
+ {
 	width: 100%;
 	white-space: nowrap;
 	padding: 0;
@@ -388,9 +403,8 @@ input.searchButton:hover
 	line-height: 1.4em;
 	color: #114a68;
 	padding: 0;
-	padding-right: 2em;
 	/* Avoid overlap with the logo. */
-	padding-left: 14em;
+	padding-left: 16em;
 	margin: 0;
 	text-align: right;
 	list-style-type: none;
@@ -402,27 +416,36 @@ input.searchButton:hover
 
 #p-personal li
 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
 	z-index: 0;
-	border: none;
-	padding: 0;
-	display: inline;
-	color: #114a68;
-	margin-left: 1em;
-	line-height: 1.2em;
-	background: none;
+	flex: 1;
+	background: rgba(0, 0, 0, 0.5);
+	border-bottom: 1px solid rgba(255,255,255,0.25);
+	text-decoration: none;
 }
 
 #p-personal li a
 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	text-decoration: none;
-	color: #005896;
-	padding-bottom: .2em;
+	color: rgb(240, 240, 240);
+	height: 100%;
+	width: 100%;
+	text-align: center;
 }
 
-#p-personal li a:hover
+#p-personal li:hover
 {
-	background-color: rgba(0,0,0,0.4);
+	background: none;
+	border: none;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 #p-personal li.active a:hover
@@ -431,38 +454,33 @@ input.searchButton:hover
 }
 
 /* The icon in front of the username / login link */
-li#pt-userpage,
 li#pt-anonuserpage,
-li#pt-login {
+li#pt-login
+{
 	/* @embed */
-	background: url(user.gif) top left no-repeat;
-	padding-left: 20px;
-}
-
-#p-personal ul {
-	text-transform: lowercase;
-}
-
-/* Don't lowercase username */
-li#pt-userpage {
-	text-transform: none;
+	background: url(images/user.png) no-repeat;
+	background-size: 50px 50px;
 }
 
 /* "Not logged in" text in gray */
-li#pt-anonuserpage {
+li#pt-anonuserpage
+{
 	color: rgb(180,180,180);
 }
 
-#p-personal li.active {
-	font-weight: bold;
+#p-personal li.active
+{
+	background: none;
+	border: none;
 }
 
 /*
 ** the page-related actions- page/talk, edit etc
 */
-#p-cactions {
+#p-cactions
+{
 	position: absolute;
-	top: 1.3em;
+	top: 6.8em;
 	left: 16em;
 	margin: 0;
 	white-space: nowrap;
