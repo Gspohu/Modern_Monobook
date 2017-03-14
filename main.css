@@ -457,6 +457,7 @@ input.searchButton:hover
 	border: none;
 	text-decoration: none;
 	cursor: pointer;
+	border-collapse: collapse;
 }
 
 #p-personal li.active a:hover
@@ -482,7 +483,10 @@ li#pt-anonuserpage
 #p-personal li.active
 {
 	background: none;
-	border: none;
+	border-bottom: none;
+	border-right: 1px solid rgba(255,255,255,0.25);
+	border-left:  1px solid rgba(255,255,255,0.25);
+	border-top:  1px solid rgba(255,255,255,0.25);
 }
 
 /*
